@@ -1,7 +1,7 @@
 import numpy
 import os 
 import re
-NEWLINE = "\n" 
+NEWLINE = "\n"  
 separator = "\t"
 
 import wx
