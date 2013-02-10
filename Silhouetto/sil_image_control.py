@@ -1,10 +1,11 @@
-import wx
+import wx 
 import os
 import math
 import time
 import numpy
-from wx.lib.colourchooser.canvas import Canvas
-from wx.lib.floatcanvas import NavCanvas, FloatCanvas, Resources 
+
+from wx.lib.colourchooser.canvas import Canvas #@warning: 
+from wx.lib.floatcanvas import NavCanvas, FloatCanvas, Resources  
 #import sys
 from PIL import Image, ImageEnhance
 
@@ -47,7 +48,7 @@ ID_WIREFRAME_MODE = 4006
 ID_WIREFRAME_EDIT_MODE = 4007
 ID_BASELINE_MODE = 4008
 ID_BASELINE_EDIT_MODE = 4009
-ID_SELECT_REGION_MODE = 4010
+ID_SELECT_REGION_MODE = 4010 
 
 LM_MISSING_VALUE = -99999
 
@@ -95,7 +96,7 @@ class SilThumbControl( wx.Window ):
         self.SetSize( (w,h) )
     def InitBuffer(self):
         size = self.GetClientSize()
-        self.buffer = wx.EmptyBitmap(w,h)
+        self.buffer = wx.EmptyBitmap(self.width,self.height)
         dc = wx.BufferedDC( None, self.buffer )
         dc.SetBackground(wx.Brush(self.GetBackgroundColour()))
         dc.Clear()
@@ -203,7 +204,7 @@ class SilImageControl( wx.Window ):
         return
     
     def SetImage(self,img, empty_image=False):
-        if self.has_image:
+        if self.has_image: 
             self.image_list.append( self.origimg )
 
         if not empty_image:
