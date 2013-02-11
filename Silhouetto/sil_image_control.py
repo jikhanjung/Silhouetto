@@ -8,7 +8,7 @@ from wx.lib.colourchooser.canvas import Canvas #@warning:
 from wx.lib.floatcanvas import NavCanvas, FloatCanvas, Resources  
 #import sys
 from PIL import Image, ImageEnhance
-
+ 
 ID_SAVE_BUTTON = 2000
 ID_DELETE_BUTTON = 2001
 ID_CLOSE_BUTTON = 2002 
