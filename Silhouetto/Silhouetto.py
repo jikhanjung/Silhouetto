@@ -14,6 +14,9 @@ class SilhouettoApp(wx.App):
         self.dlg.Show(True) 
         self.SetTopWindow(self.dlg)
         return True
+
+    def test(self):
+        pass
   
 if __name__ == "__main__":
     app = SilhouettoApp(0)
