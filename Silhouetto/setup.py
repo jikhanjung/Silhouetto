@@ -1,6 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from distutils.core import setup
-#import py2exe
-#import sys
 
 use_mplot = False
   
@@ -33,7 +34,7 @@ manifest_template = '''
 
 RT_MANIFEST = 24
 
-modan = dict(
+Silhouetto = dict(
     script = "Silhouetto.py",
     other_resources = [(RT_MANIFEST, 1, manifest_template % dict(prog="Silhouetto"))],
     dest_base = r"prog\Diplosoft\Silhouetto")
